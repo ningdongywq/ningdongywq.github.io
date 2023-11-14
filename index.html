@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 40px auto;
+            margin: 0 auto;
             line-height: 1.6;
             background-color: #f9f9f9;
             padding: 20px;
@@ -15,11 +15,11 @@
         }
 
         .profile-pic {
-            width: 100px; /* Adjust as needed */
+            width: 200px;
             height: auto;
-            border-radius: 50%; /* Circular image */
+            border-radius: 50%;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
         }
 
         nav ul {
@@ -34,14 +34,9 @@
             margin-right: 20px;
         }
 
-        nav a {
+        nav a, a {
             text-decoration: none;
             color: #0366d6;
-        }
-
-        a {
-            color: #0366d6;
-            text-decoration: none;
         }
 
         a:hover {
@@ -62,11 +57,31 @@
         p {
             margin-bottom: 20px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .profile-pic {
+                width: 120px; /* Smaller size for mobile */
+            }
+
+            h1, h2 {
+                font-size: 1.5em; /* Larger headings for better readability */
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <img src="selfie.jpeg" alt="Ning Dong" class="profile-pic">
+    <img src="selfie.jpg" alt="Ning Dong" class="profile-pic">
 
     <nav>
         <ul>
@@ -78,7 +93,6 @@
     </nav>
 
     <h1 id="about">Ning Dong’s homepage</h1>
-
     <p>I am a Ph.D. student for computer science at <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>, supervised by Prof. <a href="https://www.kth.se/profile/mfd">Mads Dam</a> and Assoc Prof. <a href="https://www.kth.se/profile/robertog">Roberto Guanciale</a>.</p>
     <p>My research work focuses on formal modelling and verification of low-level hardware and software such as pipelined processors and I/O devices, information flow analysis, and microarchitecture security.</p>
 
@@ -95,6 +109,5 @@
     <h2 id="contact">Contact</h2>
     <p>E-mail: <a href="mailto:dongn@kth.se">dongn@kth.se</a></p>
     <p>Others: <a href="https://github.com/ningdongywq">Github</a>, <a href="https://www.linkedin.com/in/ning-dong/">LinkedIn</a>, <a href="https://scholar.google.com/citations?user=JT09xTQAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
-
 </body>
 </html>
